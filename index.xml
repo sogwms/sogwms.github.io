@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Follow Nature</title>
+    <link>https://sogwms.github.io/</link>
+    <description>Recent content on Follow Nature</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Jan 2023 08:54:21 +0800</lastBuildDate><atom:link href="https://sogwms.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roadmap</title>
+      <link>https://sogwms.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 15 Jan 2023 08:54:21 +0800</pubDate>
+      
+      <guid>https://sogwms.github.io/posts/my-first-post/</guid>
+      <description>记录灵感
+记录感受
+随便写写</description>
+    </item>
+    
+  </channel>
+</rss>
