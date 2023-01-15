@@ -1,0 +1,5 @@
+baseURL = 'https://sogwms.github.io/'
+languageCode = 'en-us'
+title = 'Follow Nature'
+theme = 'ananke'
+publishDir = 'docs'
