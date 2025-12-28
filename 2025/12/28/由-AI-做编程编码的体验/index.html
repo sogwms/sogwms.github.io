@@ -4,23 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>再看3B1B的线代引发的思考 | Vano&#39;s Blog</title>
+  <title>由 AI 做编程编码的体验 | Vano&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="规划个行程: 3B1B 的线代视频真的是”惊为天人”,”降维打击”, 仿佛打开了新世界的大门, 对比起来那些之前学的不联系几何不联系空间变换的线代简直就是味同嚼蜡,极其死板片面.   3B1B 的线代”先进”&#x2F;“好”在哪里？  个人认为，建立了”直观” 和 联系&#x2F;映射到”实物” 是它”先进”的核心   其它的数学或领域能不能也这样”先进”？">
+  <meta name="description" content="最近用qoder辅助重构了一个小项目，该项目起初是比较简单的需求，所以基本就直接实现了，后来随着使用增多，又逐渐有了新的一项项需求，然后就在原来的没怎么设计的基础上增增改改，整个源码已经到了不太清晰的状态，遂重构（ps: 这里笔者个人认为是常见的状态，有足够经验者可能一开始就可以洞察一定的未来的情况，在起初就设计好合适的架构&#x2F;组织，可以应对未来的需求和变化，但这是少数且终究有限的，更多的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="再看3B1B的线代引发的思考">
-<meta property="og:url" content="https://mblog.horizons.fun/2024/08/18/%E5%86%8D%E7%9C%8B3B1B%E7%9A%84%E7%BA%BF%E4%BB%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/index.html">
+<meta property="og:title" content="由 AI 做编程编码的体验">
+<meta property="og:url" content="https://mblog.horizons.fun/2025/12/28/%E7%94%B1-AI-%E5%81%9A%E7%BC%96%E7%A8%8B%E7%BC%96%E7%A0%81%E7%9A%84%E4%BD%93%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Vano&#39;s Blog">
-<meta property="og:description" content="规划个行程: 3B1B 的线代视频真的是”惊为天人”,”降维打击”, 仿佛打开了新世界的大门, 对比起来那些之前学的不联系几何不联系空间变换的线代简直就是味同嚼蜡,极其死板片面.   3B1B 的线代”先进”&#x2F;“好”在哪里？  个人认为，建立了”直观” 和 联系&#x2F;映射到”实物” 是它”先进”的核心   其它的数学或领域能不能也这样”先进”？">
+<meta property="og:description" content="最近用qoder辅助重构了一个小项目，该项目起初是比较简单的需求，所以基本就直接实现了，后来随着使用增多，又逐渐有了新的一项项需求，然后就在原来的没怎么设计的基础上增增改改，整个源码已经到了不太清晰的状态，遂重构（ps: 这里笔者个人认为是常见的状态，有足够经验者可能一开始就可以洞察一定的未来的情况，在起初就设计好合适的架构&#x2F;组织，可以应对未来的需求和变化，但这是少数且终究有限的，更多的">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://mblog.horizons.fun/images/3B1B-foo.jpg">
-<meta property="article:published_time" content="2024-08-18T03:57:13.000Z">
-<meta property="article:modified_time" content="2024-08-18T04:13:01.169Z">
+<meta property="article:published_time" content="2025-12-28T09:17:22.000Z">
+<meta property="article:modified_time" content="2025-12-28T11:02:04.126Z">
 <meta property="article:author" content="Vano">
-<meta property="article:tag" content="漫谈">
-<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mblog.horizons.fun/images/3B1B-foo.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Vano's Blog" type="application/atom+xml">
   
@@ -77,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-再看3B1B的线代引发的思考" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-由-AI-做编程编码的体验" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/08/18/%E5%86%8D%E7%9C%8B3B1B%E7%9A%84%E7%BA%BF%E4%BB%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/" class="article-date">
-  <time class="dt-published" datetime="2024-08-18T03:57:13.000Z" itemprop="datePublished">2024-08-18</time>
+    <a href="/2025/12/28/%E7%94%B1-AI-%E5%81%9A%E7%BC%96%E7%A8%8B%E7%BC%96%E7%A0%81%E7%9A%84%E4%BD%93%E9%AA%8C/" class="article-date">
+  <time class="dt-published" datetime="2025-12-28T09:17:22.000Z" itemprop="datePublished">2025-12-28</time>
 </a>
     
   </div>
@@ -91,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      再看3B1B的线代引发的思考
+      由 AI 做编程编码的体验
     </h1>
   
 
@@ -99,46 +95,29 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><strong>规划个行程</strong>:<br><img src="/images/3B1B-foo.jpg"   /></p>
-<p>3B1B 的线代视频真的是”惊为天人”,”降维打击”, 仿佛打开了新世界的大门, 对比起来那些之前学的不联系几何不联系空间变换的线代简直就是味同嚼蜡,极其死板片面. </p>
-<ul>
-<li><p>3B1B 的线代”先进”&#x2F;“好”在哪里？</p>
-<ul>
-<li>个人认为，建立了”直观” 和 联系&#x2F;映射到”实物” 是它”先进”的核心</li>
-</ul>
-</li>
-<li><p>其它的数学或领域能不能也这样”先进”？</p>
-</li>
-</ul>
+        <p>最近用qoder辅助重构了一个小项目，该项目起初是比较简单的需求，所以基本就直接实现了，后来随着使用增多，又逐渐有了新的一项项需求，然后就在原来的没怎么设计的基础上增增改改，整个源码已经到了不太清晰的状态，遂重构（ps: 这里笔者个人认为是常见的状态，有足够经验者可能一开始就可以洞察一定的未来的情况，在起初就设计好合适的架构&#x2F;组织，可以应对未来的需求和变化，但这是少数且终究有限的，更多的情况可能是一开始就是摸着石头过河，走了一条又一条路，积重难返，不太能应对新的变化，然后回望过来，事后诸葛亮，推倒重来，会设计&#x2F;构建出更好的路&#x2F;结构，即重构。 循环往复，随变化而变化）</p>
+<p>AI在重构里能做什么呢，在这个小项目里，是除需求外的所有(编码)，定义足够详细的需求(具体功能和其余关注的部分，如结构，技术栈等)，然后交给 qoder,让它实现，一次即通过可用！ 观察生成的结果，再按新想法微调即成(提示 qoder)。全程无手动编码，生成的源代码质量过关（超越一般手工的），此处是完整的源代码 <a target="_blank" rel="noopener" href="https://codeberg.org/vano/image-player-app">https://codeberg.org/vano/image-player-app</a></p>
+<p>在切身体验过后，不得不说，感受到了一种新的开发方式： 对于一个项目，你要做的是整体设计和把控，具体细节和实现大可以交给你的小弟(AI),ta任劳任怨，理解力和执行力杠杠的，当然，如果想，也可以介入具体。新的时代！</p>
+<p>人是感性的，容易被冲昏头脑，在狂热褪去后再看这种新的开发方式，个人认为也是有利弊的，利 ta让人更加&#x2F;不得不关注于更上层更抽象和全局的东西，可以从编码&#x2F;细节中解放，弊 长久依赖ta&#x2F;脱离实际编码经验会造成什么呢？</p>
+<p>更多体验后，再续</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mblog.horizons.fun/2024/08/18/%E5%86%8D%E7%9C%8B3B1B%E7%9A%84%E7%BA%BF%E4%BB%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/" data-id="cmjpmo4mi00051iwf8236bobf" data-title="再看3B1B的线代引发的思考" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://mblog.horizons.fun/2025/12/28/%E7%94%B1-AI-%E5%81%9A%E7%BC%96%E7%A8%8B%E7%BC%96%E7%A0%81%E7%9A%84%E4%BD%93%E9%AA%8C/" data-id="cmjpmo4mk000b1iwf1e8d3ka3" data-title="由 AI 做编程编码的体验" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%BC%AB%E8%B0%88/" rel="tag">漫谈</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2024/09/09/%E5%93%81%E5%91%B3%E5%BE%88%E9%87%8D%E8%A6%81/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          品味很重要
-        
-      </div>
-    </a>
   
-  
-    <a href="/2024/06/27/csi2-software-view/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2025/03/08/%E7%BA%AA%E5%BF%B5%E4%B8%8B%E7%AC%AC%E4%B8%80%E4%B8%AASMT/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">MIPI CSI-2 (软件工程师视角)</div>
+      <div class="article-nav-title">纪念下第一个SMT</div>
     </a>
   
 </nav>
